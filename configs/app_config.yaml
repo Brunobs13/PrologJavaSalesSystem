@@ -1,0 +1,21 @@
+application:
+  name: prolog-java-sales-platform
+  runtime: java-21
+  environment: development
+
+server:
+  host: 0.0.0.0
+  port: 8080
+
+data:
+  source: src/main/resources/prolog/store.pl
+
+observability:
+  logging_level: INFO
+  debug: false
+
+security:
+  secret_management:
+    strategy: environment_variables
+  commit_scanning:
+    enabled: true
