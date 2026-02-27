@@ -1,0 +1,53 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Python / notebooks
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+out/
+target/
+
+# Build artifacts
+build/
+dist/
+coverage/
+
+# Logs
+*.log
+logs/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# MLOps / data tooling
+mlruns/
+artifacts/
+.dvc/cache/
+.dagshub/
+
+# Containers
+.docker/
+.dockerignore
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary
+*.tmp
+*.swp
