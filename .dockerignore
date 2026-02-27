@@ -1,0 +1,12 @@
+.git
+.github
+build
+out
+*.class
+*.log
+.env
+.venv
+venv
+legacy
+README.md
+TECHNICAL_OVERVIEW.md

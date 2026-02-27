@@ -1,0 +1,15 @@
+services:
+  sales-platform:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: prolog-java-sales-platform
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    environment:
+      PORT: ${PORT:-8080}
+      PROLOG_DATA_FILE: ${PROLOG_DATA_FILE:-/app/src/main/resources/prolog/store.pl}
+      DEBUG: ${DEBUG:-false}
+    restart: unless-stopped

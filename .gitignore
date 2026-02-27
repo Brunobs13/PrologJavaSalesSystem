@@ -42,7 +42,6 @@ artifacts/
 
 # Containers
 .docker/
-.dockerignore
 
 # IDE
 .vscode/
